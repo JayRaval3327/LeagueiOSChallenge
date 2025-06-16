@@ -22,7 +22,6 @@
 		938A8C212DB07FF6007678EA /* View+Embeded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C202DB07FF6007678EA /* View+Embeded.swift */; };
 		938A8C232DB0865C007678EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C222DB0865C007678EA /* LoginView.swift */; };
 		938A8C252DB08811007678EA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C242DB08811007678EA /* LoginViewModel.swift */; };
-		938A8C292DB14FB3007678EA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C282DB14FB3007678EA /* Router.swift */; };
 		938A8C2B2DB1500C007678EA /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C2A2DB1500C007678EA /* RouterProtocol.swift */; };
 		938A8C2D2DB1511D007678EA /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C2C2DB1511D007678EA /* LoginRouter.swift */; };
 		938A8C302DB15291007678EA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938A8C2F2DB15291007678EA /* FeedViewController.swift */; };
@@ -81,7 +80,6 @@
 		938A8C202DB07FF6007678EA /* View+Embeded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Embeded.swift"; sourceTree = "<group>"; };
 		938A8C222DB0865C007678EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		938A8C242DB08811007678EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		938A8C282DB14FB3007678EA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		938A8C2A2DB1500C007678EA /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		938A8C2C2DB1511D007678EA /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		938A8C2F2DB15291007678EA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 		938A8C272DB14FA8007678EA /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				938A8C282DB14FB3007678EA /* Router.swift */,
 				938A8C2A2DB1500C007678EA /* RouterProtocol.swift */,
 			);
 			path = Router;
@@ -419,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938A8C292DB14FB3007678EA /* Router.swift in Sources */,
 				938A8C1C2DB07E32007678EA /* LoginViewController.swift in Sources */,
 				938A8C3C2DB1743C007678EA /* PostResponse.swift in Sources */,
 				938A8C542DB21867007678EA /* ProfileViewModel.swift in Sources */,

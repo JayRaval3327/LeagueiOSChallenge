@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: SwiftUIViewController<LoginView> {    
+class LoginViewController: SwiftUIViewController<LoginView>, LoginRouter {    
     
     var viewModel: LoginViewModel! {
         didSet {

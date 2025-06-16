@@ -17,8 +17,7 @@ struct LoginScene: SwiftUIControllerScene {
     
     func loadViewController() -> LoginViewController {
         let viewController = LoginViewController()
-        let router = DefaultLoginRouter(controller: viewController)
-        let configuredViewModel = LoginViewModel(apiHelper: self.apiHelper, router: router)
+        let configuredViewModel = LoginViewModel(apiHelper: self.apiHelper, router: viewController)
         viewController.viewModel = configuredViewModel
         return viewController
     }

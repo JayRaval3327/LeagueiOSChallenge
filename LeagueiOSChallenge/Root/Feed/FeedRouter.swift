@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol FeedRouter {
+protocol FeedRouter: RouterProtocol {
     func presentProfileViewController(feed: FeedDisplayable)
 }
 
-final class DefaultFeedRouter: Router<FeedViewController>, FeedRouter {
+extension FeedRouter {
     func presentProfileViewController(feed: FeedDisplayable) {
         let viewController = ProfileScene(feed: feed).loadViewController()
-        self.presentModally(viewController, detents:[.medium()], embedInNavigationController: true)
+        self.presentModally(viewController, detents: [.medium()], embedInNavigationController: true)
     }
 }

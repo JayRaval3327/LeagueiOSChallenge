@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol LoginRouter {
+protocol LoginRouter: RouterProtocol {
     func presentFeedViewController(loginType: LoginType, apiKey: String)
 }
 
-final class DefaultLoginRouter: Router<LoginViewController>, LoginRouter {
+extension LoginRouter {
     func presentFeedViewController(loginType: LoginType, apiKey: String) {
         let viewController = FeedScene(loginType: loginType, apiHelper: APIHelper(apiKey: apiKey)).loadViewController()
         self.presentFullScreenModally(viewController, embedInNavigationController: true)

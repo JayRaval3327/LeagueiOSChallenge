@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeedViewController: SwiftUIViewController<FeedView> {
+class FeedViewController: SwiftUIViewController<FeedView>, FeedRouter {
     
     var viewModel: FeedViewModel! {
         didSet {

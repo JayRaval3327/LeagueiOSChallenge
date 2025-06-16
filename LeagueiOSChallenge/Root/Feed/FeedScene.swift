@@ -19,8 +19,7 @@ struct FeedScene: SwiftUIControllerScene {
     
     func loadViewController() -> FeedViewController {
         let viewController = FeedViewController()
-        let router = DefaultFeedRouter(controller: viewController)
-        let configuredViewModel = FeedViewModel(loginType: loginType, apiHelper: self.apiHelper, router: router) { [weak viewController] in
+        let configuredViewModel = FeedViewModel(loginType: loginType, apiHelper: self.apiHelper, router: viewController) { [weak viewController] in
             viewController?.dismiss(animated: true)
         }
         viewController.viewModel = configuredViewModel
